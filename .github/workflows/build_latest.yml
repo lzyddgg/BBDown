@@ -17,7 +17,7 @@ jobs:
         run: echo "date=$(date -u -d '8 hours' +'%Y%m%d')" >> "$GITHUB_OUTPUT"
 
   build-mac-x64-arm64:
-    runs-on: macos-13
+    runs-on: macos-11
     needs: set-date
 
     steps:
