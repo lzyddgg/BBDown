@@ -145,7 +145,7 @@ jobs:
           path: BBDown_${{ needs.set-date.outputs.date }}_linux-arm64.zip
 
   build-mac-x64-arm64:
-    runs-on: macos-latest
+    runs-on: macos-13
     needs: set-date
 
     steps:
